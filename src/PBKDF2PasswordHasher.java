@@ -122,10 +122,10 @@ class PBKDF2PasswordHasher {
     }
 
     /**
-     * 
-     * @param a
-     * @param b
-     * @return
+     * Method for comparing byte arrays in constant time
+     * @param a Byte array one
+     * @param b Byte array two
+     * @return Returns true if the byte arrays match, in a constant time
      */
     public boolean constantEquals(byte[] a, byte[] b) {
         int result = 0;
